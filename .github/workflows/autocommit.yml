@@ -10,7 +10,7 @@ on:
   - cron: "0 * * * *"
 
 jobs:
-  auto_commit:
+  project_rxy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.0.0  
