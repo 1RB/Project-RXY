@@ -1,4 +1,4 @@
-name: Auto commit
+name: Project RXY
 
 on:
 
@@ -18,11 +18,11 @@ jobs:
          persist-credentials: false
          fetch-depth: 0
 
-      - name: Modify last update
+      - name: Modify RXY
         run: |
-          cat > LAST_UPDATED
-          d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-          echo $d > LAST_UPDATED
+          cat > RXY
+          d=`ray said today is: "date '+%Y-%m-%dT%H:%M:%SZ'"`
+          echo $d > RXY
           
       - name: Commit changes
         run: |
@@ -30,14 +30,14 @@ jobs:
           git config --local user.name "1rb"
           git add -A
           
-          arr[0]="feat: 😂 auto commit"
-          arr[1]="feat: 😱 auto commit"
-          arr[2]="feat: 👿 auto commit"
-          arr[3]="feat: 💩 auto commit"
-          arr[4]="feat: 🙏 auto commit"
-          arr[5]="feat: 🙈 auto commit"
-          arr[6]="feat: 🐐 auto commit"
-          arr[7]="feat: 🚀 auto commit"
+          arr[0]="you know what... coding isn't for me"
+          arr[1]="FINALLY. this should work"
+          arr[2]="if you see this... im sorry..."
+          arr[3]="yep. i give up"
+          arr[4]="SEND HELP PLEASE :C"
+          arr[5]="fixed... i think"
+          arr[6]="you better work now."
+          arr[7]="I regret being born"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
