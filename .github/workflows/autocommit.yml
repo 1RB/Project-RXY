@@ -21,7 +21,7 @@ jobs:
       - name: Modify RXY
         run: |
           cat > RXY
-          d=`ray said today is: "date '+%Y-%m-%dT%H:%M:%SZ'"`
+          d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           echo $d > RXY
           
       - name: Commit changes
