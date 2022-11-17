@@ -1,13 +1,12 @@
 name: Project RXY
 
 on:
-
   push:
     branches:
       - master
       
   schedule:
-  - cron: "1-30 * * * *"
+  - cron: "20/10 * * * *"
 
 jobs:
   project_rxy:
