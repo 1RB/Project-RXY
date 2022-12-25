@@ -17,11 +17,11 @@ jobs:
          persist-credentials: false
          fetch-depth: 0
 
-      - name: Modify RXY
+      - name: Modify README.md
         run: |
-          cat > RXY
-          d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-          echo $d > RXY
+          cat > README.md
+          d=`Last Edited: '+%Y-%m-%dT%H:%M:%SZ'`
+          echo $d > README.md
           
       - name: Commit changes
         run: |
