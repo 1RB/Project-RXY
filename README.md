@@ -12,6 +12,10 @@ Last Edited: 2022-12-27
 To install rxy, clone the repository and run :
 
 
+git clone https://github.com/1RB/rxy.git
+cd rxy
+npm install
+
 
 ## Usage
 To use rxy, require it in your project and call the desired function:
