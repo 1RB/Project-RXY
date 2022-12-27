@@ -110,7 +110,7 @@ jobs:
           
           \`\`\`js
           const rxy = require('rxy');
-          ```
+          \`\`\`
           
           ## Usage
           To use rxy, require it in your project and call the desired function:
