@@ -9,7 +9,7 @@ Last Edited: 2022-12-27
 - Graph search: rxy includes algorithms for traversing graph data structures in order to find solutions to problems.
 
 ## Installation
-To install rxy, clone the repository and run :
+To install rxy, clone the repository and run `npm install`:
 
 
 
