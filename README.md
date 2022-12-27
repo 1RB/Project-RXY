@@ -8,6 +8,65 @@ Last Edited: `2022-12-27`
 - Dynamic programming: rxy uses dynamic programming to store the solutions to subproblems in a table, enabling efficient reuse of these solutions.
 - Graph search: rxy includes algorithms for traversing graph data structures in order to find solutions to problems.
 
+1. \*\*Divide and conquer:\*\* This is a common approach to solving complex problems that involves breaking the problem down into smaller, more manageable pieces and solving each piece individually. For example, the following code uses the divide and conquer approach to find the maximum element in an array:
+
+```js
+function findMax(array) {
+  if (array.length === 1) {
+    return array[0];
+  } else {
+    const mid = Math.floor(array.length / 2);
+    const leftMax = findMax(array.slice(0, mid));
+    const rightMax = findMax(array.slice(mid));
+    return Math.max(leftMax, rightMax);
+  }
+}
+```
+
+2. \*\*Dynamic programming:\*\* This technique involves breaking a complex problem down into smaller subproblems and storing the solutions to these subproblems in a table so they can be reused later. The following code demonstrates how dynamic programming can be used to solve the knapsack problem, in which a thief wants to maximize the value of items they can steal without exceeding the weight limit of their knapsack:
+
+```js
+function knapsack(items, weightLimit) {
+  const n = items.length;
+  const table = [];
+  for (let i = 0; i <= n; i++) {
+    table[i] = Array(weightLimit + 1).fill(0);
+  }
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= weightLimit; j++) {
+      if (items[i - 1][1] > j) {
+        table[i][j] = table[i - 1][j];
+      } else {
+        table[i][j] = Math.max(table[i - 1][j], table[i - 1][j - items[i - 1][1]] + items[i - 1][0]);
+      }
+    }
+  }
+  return table[n][weightLimit];
+}
+```
+
+3. \*\*Graph search:\*\* This technique involves traversing a graph data structure in order to find a solution to a problem. The following code uses a depth-first search to find a path from the start node to the goal node in a graph:
+
+```js
+function* dfs(graph, start, goal) {
+  const stack = [[start, [start]]];
+  while (stack.length > 0) {
+    const [vertex, path] = stack.pop();
+    for (const next of graph[vertex]) {
+      if (!path.includes(next)) {
+        if (next === goal) {
+          yield path.concat(next);
+        } else {
+          stack.push([next, path.concat(next)]);
+        }
+      }
+    }
+  }
+}
+```
+
+
+
 ## Installation
 To install rxy, clone the repository and run `npm install`:
 
