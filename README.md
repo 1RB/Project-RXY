@@ -11,7 +11,7 @@ Last Edited: `2022-12-27`
 ## Installation
 To install rxy, clone the repository and run `npm install`:
 
-```js
+```bash
 git clone https://github.com/1RB/rxy.git
 cd rxy
 npm install
