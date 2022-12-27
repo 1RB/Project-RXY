@@ -31,7 +31,7 @@ jobs:
           - Graph search: rxy includes algorithms for traversing graph data structures in order to find solutions to problems.
           
           ## Installation
-          To install rxy, clone the repository and run `npm install`:
+          To install rxy, clone the repository and run \`npm install\`:
           
           ```js
           - git clone https://github.com/1RB/rxy.git
