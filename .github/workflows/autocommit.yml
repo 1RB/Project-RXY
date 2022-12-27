@@ -22,6 +22,7 @@ jobs:
           cat > README.md <<EOF
           # rxy
           rxy is a tool for solving complex problems in a efficient manner. It utilizes cutting-edge techniques and algorithms to deliver accurate and reliable results.
+          
           Last Edited: $(date '+%Y-%m-%d')
           
           ## Features
@@ -31,6 +32,7 @@ jobs:
           
           ## Installation
           To install rxy, clone the repository and run `npm install`:
+          
           ```js
           git clone https://github.com/1RB/rxy.git
           cd rxy
@@ -39,6 +41,7 @@ jobs:
           
           ## Usage
           To use rxy, require it in your project and call the desired function:
+          
           ```javascript
           const rxy = require('rxy');
           console.log(rxy.findMax([1, 2, 3, 4, 5]));  // prints 5
