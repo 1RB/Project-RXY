@@ -95,10 +95,22 @@ jobs:
           To install rxy, clone the repository and run \`npm install\`:
           
           \`\`\`bash
-          git clone https://github.com/1RB/rxy.git
-          cd rxy
-          npm install
+          npm install -g rxy
           \`\`\`
+          
+          This will install rxy as a global npm package, allowing you to use the rxy command from any location on your system.
+
+          Alternatively, you can install rxy as a dependency in your project by running the following command:
+          
+          \`\`\`bash
+          npm install rxy
+          \`\`\`
+          
+          This will install rxy in the \`node_modules\` directory of your project, and you can use it by requiring it in your code:
+          
+          \`\`\`js
+          const rxy = require('rxy');
+          ```
           
           ## Usage
           To use rxy, require it in your project and call the desired function:
