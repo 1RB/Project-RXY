@@ -1,7 +1,7 @@
 # rxy
 rxy is a tool for solving complex problems in a efficient manner. It utilizes cutting-edge techniques and algorithms to deliver accurate and reliable results.
 
-Last Edited: `2023-07-04T18:47:49Z`
+Last Edited: `2023-07-04T19:00:06Z`
 
 ## Features
 - Divide and conquer: rxy uses the divide and conquer approach to break complex problems down into smaller, more manageable pieces and solve them individually
