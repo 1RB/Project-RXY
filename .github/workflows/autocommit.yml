@@ -22,7 +22,7 @@ jobs:
           readme_content=$(cat README.md)
           response=$(curl https://api-inference.huggingface.co/models/bigscience/bloom \
             -X POST \
-            -d '{"inputs": "$readme_content"}') \
+            -d '{"inputs": "$readme_content"}' \
             -H 'Content-Type: application/json' \
             -H "Authorization: Bearer ${{ secrets.HUGGINGFACE }}")
             echo "$response" | jq -r '.generated_text' >> README.md
