@@ -1,1 +1,10 @@
-[{"generated_text":"Can you please explain the functionality of algorithms in computer science? I am a beginner in this field and I am trying to understand the concept of algorithms. I"}]
+# rxy
+
+:rotating_light: **Hold Up! Things Are Getting a Makeover** :rotating_light:
+
+Welcome to ***PROJECT RXY***! This project is in its early stages and the codebase is currently undergoing significant changes.
+
+## Current status:
+
+* **Active development**: Actively refactoring and improving the codebase.
+* **Limited code available**: While the foundation is being laid, you might not find complete functionality yet.
