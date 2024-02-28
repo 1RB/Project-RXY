@@ -1,4 +1,4 @@
-<p align="center">:rotating_light: <b>Hold Up! Things Are Getting a Makeover</b> :rotating_light:</p>
+<p align="center">:rotating_light:<b>Hold Up! Things Are Getting a Makeover</b>:rotating_light:</p>
 
 Welcome to PROJECT RXY! This project is in its early stages and the codebase is currently undergoing significant changes.
 
