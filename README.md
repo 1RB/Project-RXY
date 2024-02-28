@@ -1,8 +1,8 @@
 # rxy
 
-:rotating_light: **Hold Up! Things Are Getting a Makeover** :rotating_light:
+<p align="center">:rotating_light: **Hold Up! Things Are Getting a Makeover** :rotating_light:</p>
 
-Welcome to ***PROJECT RXY***! This project is in its early stages and the codebase is currently undergoing significant changes.
+Welcome to PROJECT RXY! This project is in its early stages and the codebase is currently undergoing significant changes.
 
 ## Current status:
 
