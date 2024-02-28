@@ -25,7 +25,8 @@ jobs:
             -d '{"inputs": "$readme_content"}' \
             -H 'Content-Type: application/json' \
             -H "Authorization: Bearer ${{ secrets.HUGGINGFACE }}")
-            echo "$response" | jq -r '.generated_text' >> README.md
+            generated_text=$(echo "$response" | jq -r '.generated_text[0]')
+            echo "$generated_text" >> README.md
           
       - name: Commit changes
         run: |
