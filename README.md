@@ -5,5 +5,4 @@ Welcome to PROJECT RXY! This project is in its early stages and the codebase is 
 ## Current status:
 
 * **Active development**: Actively refactoring and improving the codebase.
-<<<<<<< HEAD
 * **Limited code available**: While the foundation is being laid, you might not find complete functionality yet.
