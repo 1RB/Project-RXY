@@ -28,24 +28,16 @@ jobs:
       - name: Modify files
         run: |
 
-          # take a random file from the src folder in the repo take the last line and feed it into the AI
-          # take the output and append it to the file
           # response=$(curl https://api-inference.huggingface.co/models/bigscience/bloom \
           #   -X POST \
           #   -d '{"inputs": ""}' \
           #   -H 'Content-Type: application/json' \
           #   -H "Authorization: Bearer ${{ secrets.HUGGINGFACE }}")
           #   echo "$response" >> README.md
-         
-          file=$(ls src | shuf -n 1)
-          last_line=$(tail -n 1 $file)
-          response=$(curl https://api-inference.huggingface.co/models/bigscience/bloom \
-            -X POST \
-            -d "{\"inputs\": \"$last_line\"}" \
-            -H 'Content-Type: application/json' \
-            -H "Authorization: Bearer ${{ secrets.HUGGINGFACE }}")
-          echo "$response" >> README.md
-
+                   
+            last_number=$(tail -n 1 "src/Data/numbers.txt")
+            new_number=$((last_number + 1))
+            echo "$new_number" >> "src/Data/numbers.txt"
           
       - name: Commit changes
         run: |
