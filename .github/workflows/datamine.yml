@@ -24,6 +24,12 @@ jobs:
         with:
          persist-credentials: false
          fetch-depth: 0
+      
+      - name: random Sleep
+        run: |
+           delay=$[ ( $RANDOM % 18000 )  ]s
+           echo "Delaying for $delay seconds"
+           sleep $delay
 
       - name: Modify files
         run: |
@@ -38,12 +44,6 @@ jobs:
             last_number=$(tail -n 1 "src/Data/numbers.txt")
             new_number=$((last_number + 1))
             echo "$new_number" >> "src/Data/numbers.txt"
-          
-      - name: random Sleep
-        run: |
-          delay=$[ ( $RANDOM % 18000 )  ]s
-          echo "Delaying for $delay seconds"
-          sleep $delay
 
       - name: Commit changes
         run: |
